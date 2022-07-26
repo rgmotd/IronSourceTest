@@ -16,7 +16,7 @@ import retrofit2.Retrofit
 val appModule = module {
     single { ActionSharedPreferences(androidApplication()) }
 
-    viewModel { ActionViewModel(get(), get()) }
+    viewModel { ActionViewModel(get(), get(), get()) }
 }
 
 val dataModule = module {
